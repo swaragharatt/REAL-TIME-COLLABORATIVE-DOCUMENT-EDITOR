@@ -1,74 +1,103 @@
 
+
 # Real-Time Collaborative Document Editor
 
-This is a real-time document editing application built with React.js, Node.js, and Socket.IO. It allows multiple users to write and edit text simultaneously with live synchronization across all connected clients.
+This is a real-time collaborative document editor built using React.js, Node.js, and Socket.IO. It allows multiple users to write and edit shared text documents simultaneously with live synchronization across all connected clients.
+
+---
 
 ## Technologies Used
 
-| Frontend | Backend | Real-Time | Database |
-|----------|---------|-----------|----------|
+| Frontend | Backend           | Real-Time | Database                         |
+| -------- | ----------------- | --------- | -------------------------------- |
 | React.js | Node.js (Express) | Socket.IO | MongoDB or PostgreSQL (optional) |
+
+---
 
 ## Features
 
-- Live collaborative text editing
-- Real-time communication between clients
-- Simple modular structure
-- Easy to run locally for testing or development
+* Simultaneous editing with real-time synchronization
+* Socket-based live communication
+* Simple and modular code structure
+* Easy to set up and run locally
+
+---
 
 ## Project Structure
 
+```
 collab-editor/
 ├── client/         # React frontend
 │   ├── src/
 │   └── public/
-├── server/         # Node.js + Express backend
+├── server/         # Node.js backend
 │   └── index.js
 └── README.md
+```
 
+---
 
 ## Getting Started
 
-### 1. Clone or Download the Repository
+### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/swaragharatt/collab-editor.git
 cd collab-editor
+```
 
-Or download the ZIP and extract it manually.
+Or manually download and extract the ZIP file.
+
+---
 
 ### 2. Set Up the Backend
 
-Navigate to the server directory, install dependencies, and start the server:
-
-bash
+```bash
 cd server
 npm install
 node index.js
+```
 
-The backend server will start at `http://localhost:3001`.
+The backend server will run at `http://localhost:3001`.
+
+---
 
 ### 3. Set Up the Frontend
 
-Navigate to the client directory, install dependencies, and start the development server:
-
-bash
+```bash
 cd client
 npm install
+npm start
+```
 
+The frontend will be accessible at `http://localhost:3000`.
 
-The frontend will open in the browser at `http://localhost:3000`.
+---
 
 ## Usage
-To test collaborative functionality, open `http://localhost:3000` in multiple browser windows or tabs. Typing in one window will reflect in real time in all others.
+
+Open the frontend in multiple browser tabs or windows. Typing in one tab will reflect instantly in others, demonstrating real-time collaboration.
+
+---
+
+## Output
+![Screenshot 2025-06-13 033457](https://github.com/user-attachments/assets/9905577f-9d53-44bd-8b62-ff790f5f6148)
+
+The app displays a live document editor with a shared text area. All users connected to the same session will see updates as they happen. The interface is minimal and responsive for quick testing and demonstration
+
+
+---
 
 ## Potential Improvements
-* Integration with a database to save documents
-* User authentication system
-* Document management (create, rename, delete)
-* Editor enhancements and styling improvements
+
+* Connect to a database for saving documents
+* Add user authentication and session management
+* Allow document creation, renaming, and deletion
+* Enhance editor UI with formatting tools
+
+---
 
 ## Author
-Developed by [swaragharatt]
 
-`
+Developed by **swaragharatt**
+
